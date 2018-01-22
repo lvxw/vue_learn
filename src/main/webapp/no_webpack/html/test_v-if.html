@@ -1,0 +1,31 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--cdn方式引入vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+</head>
+<body>
+
+<!--这是我们的View-->
+<div id="app">
+    <p v-if="see">测试v-if</p>
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data:{
+            name: 'zhangsan',
+            see:true
+        }
+    })
+</script>
+</body>
+</html>
+

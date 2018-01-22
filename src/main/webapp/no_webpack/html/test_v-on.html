@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--cdn方式引入vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+</head>
+<body>
+
+<!--这是我们的View-->
+<div id="app">
+    <button v-on:click="show" value="ll">点我</button>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data:{
+            name: 'zhangsan'
+        },
+        methods:{
+            show:function () {
+                alert('测试v-on');
+            }
+        }
+    })
+</script>
+</body>
+</html>
+

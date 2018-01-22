@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--cdn方式引入vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+</head>
+<body>
+
+<!--这是我们的View-->
+<div id="app">
+    <ul>
+        <li v-for="e in arr">{{e}}</li>
+    </ul>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data:{
+            name: 'zhangsan',
+            arr:['hadoop','spark','storm','flink']
+        },
+        methods:{
+            show:function () {
+                alert('测试v-on');
+            }
+        }
+    })
+</script>
+</body>
+</html>
+
